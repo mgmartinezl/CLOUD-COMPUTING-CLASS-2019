@@ -2,6 +2,8 @@
 
 ## Names: Sara Díaz - Gabriela Martinez
 
+## Task 2.1: Getting Started with NLTK
+
 ### Q211 (WordCountTensorFlow_1.py): 
 
 C:\Users\gabim\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/gabim/PycharmProjects/Lab2_CC/WordCountTensorFlow_1.py<br/>
@@ -42,6 +44,19 @@ C:\Users\gabim\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/gab
 [nltk_data]   Package stopwords is already up-to-date!<br/>
 [('tensorflow', 193), ('data', 102), ('tensor', 99), ('code', 90), ('learning', 81), ('function', 74), ('one', 73), ('use', 65), ('example', 64), ('available', 63)]<br/>
 2998<br/>
+<br/>
+Process finished with exit code 0<br/>
+
+## Task 2.2: Getting Started with tweepy
+
+### Q221 (Twitter_1.py): 
+
+C:\Users\gabim\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/gabim/PycharmProjects/Lab2_CC/Twitter_1.py<br/>
+Name: Gabriela Martinez<br/>
+Location: Medellín, Colombia<br/>
+Friends: 12<br/>
+Created: 2018-01-13 13:59:37<br/>
+Description: <br/>
 <br/>
 Process finished with exit code 0<br/>
 
