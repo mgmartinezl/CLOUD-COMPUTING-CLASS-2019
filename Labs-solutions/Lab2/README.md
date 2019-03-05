@@ -1,4 +1,8 @@
-## Q211: 
+# Lab 2 answers
+
+## Names: Sara Díaz - Gabriela Martinez
+
+### Q211: 
 
 C:\Users\gabim\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/gabim/PycharmProjects/Lab2_CC/WordCountTensorFlow_1.py
 [nltk_data] Downloading package punkt to
