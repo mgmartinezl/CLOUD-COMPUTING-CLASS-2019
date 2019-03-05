@@ -62,233 +62,233 @@ Process finished with exit code 0<br/>
 
 ### Q22 (Twitter_2.py): formatting tweets into json and finding friends
 
-#LasMásLeídas | El asesinato cometido para ocultar peligroso descubrimiento matemático ⬇ (Vía @bbcmundo) https://t.co/ajLmfaiIT9
-{
-  "created_at": "Tue Mar 05 08:00:13 +0000 2019",
-  "id": 1102841228457111553,
-  "id_str": "1102841228457111553",
-  "text": "#LasM\u00e1sLe\u00eddas | El asesinato cometido para ocultar peligroso descubrimiento matem\u00e1tico \u2b07 (V\u00eda @bbcmundo) https://t.co/ajLmfaiIT9",
-  "truncated": false,
-  "entities": {
-    "hashtags": [
-      {
-        "text": "LasM\u00e1sLe\u00eddas",
-        "indices": [
-          0,
-          13
-        ]
-      }
-    ],
-    "symbols": [],
-    "user_mentions": [
-      {
-        "screen_name": "bbcmundo",
-        "name": "BBC News Mundo",
-        "id": 10012122,
-        "id_str": "10012122",
-        "indices": [
-          94,
-          103
-        ]
-      }
-    ],
-    "urls": [
-      {
-        "url": "https://t.co/ajLmfaiIT9",
-        "expanded_url": "http://ow.ly/j3cq30nVdU5",
-        "display_url": "ow.ly/j3cq30nVdU5",
-        "indices": [
-          105,
-          128
-        ]
-      }
-    ]
-  },
-  "source": "<a href=\"https://www.hootsuite.com\" rel=\"nofollow\">Hootsuite Inc.</a>",
-  "in_reply_to_status_id": null,
-  "in_reply_to_status_id_str": null,
-  "in_reply_to_user_id": null,
-  "in_reply_to_user_id_str": null,
-  "in_reply_to_screen_name": null,
-  "user": {
-    "id": 9633802,
-    "id_str": "9633802",
-    "name": "EL TIEMPO",
-    "screen_name": "ELTIEMPO",
-    "location": "Bogot\u00e1, Colombia",
-    "description": "Principales noticias de Colombia, el mundo, deportes, econom\u00eda, pol\u00edtica, tecnolog\u00eda, cultura, estilo de vida, tendencias y mucho m\u00e1s. El Tiempo Casa Editorial.",
-    "url": "http://t.co/pXsWZAle5x",
-    "entities": {
-      "url": {
-        "urls": [
-          {
-            "url": "http://t.co/pXsWZAle5x",
-            "expanded_url": "http://www.eltiempo.com",
-            "display_url": "eltiempo.com",
-            "indices": [
-              0,
-              22
-            ]
-          }
-        ]
-      },
-      "description": {
-        "urls": []
-      }
-    },
-    "protected": false,
-    "followers_count": 6563843,
-    "friends_count": 26159,
-    "listed_count": 15584,
-    "created_at": "Tue Oct 23 20:03:24 +0000 2007",
-    "favourites_count": 6519,
-    "utc_offset": null,
-    "time_zone": null,
-    "geo_enabled": true,
-    "verified": true,
-    "statuses_count": 482612,
-    "lang": "es",
-    "contributors_enabled": false,
-    "is_translator": false,
-    "is_translation_enabled": true,
-    "profile_background_color": "06609C",
-    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-    "profile_background_tile": true,
-    "profile_image_url": "http://pbs.twimg.com/profile_images/1053511496972541953/Po6LEiC5_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1053511496972541953/Po6LEiC5_normal.jpg",
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/9633802/1551042126",
-    "profile_link_color": "EB0C2A",
-    "profile_sidebar_border_color": "000000",
-    "profile_sidebar_fill_color": "FFFFFF",
-    "profile_text_color": "000000",
-    "profile_use_background_image": true,
-    "has_extended_profile": true,
-    "default_profile": false,
-    "default_profile_image": false,
-    "following": true,
-    "follow_request_sent": false,
-    "notifications": false,
-    "translator_type": "regular"
-  },
-  "geo": null,
-  "coordinates": null,
-  "place": null,
-  "contributors": null,
-  "is_quote_status": false,
-  "retweet_count": 0,
-  "favorite_count": 0,
-  "favorited": false,
-  "retweeted": false,
-  "possibly_sensitive": false,
-  "possibly_sensitive_appealable": false,
-  "lang": "es"
-}
-{
-  "id": 1115440213,
-  "id_str": "1115440213",
-  "name": "Centro Democr\u00e1tico",
-  "screen_name": "CeDemocratico",
-  "location": "Colombia",
-  "description": "Centro Democr\u00e1tico. Mano Firme, Coraz\u00f3n Grande - Partido Pol\u00edtico.",
-  "url": "https://t.co/O7tiANYpeT",
-  "entities": {
-    "url": {
-      "urls": [
-        {
-          "url": "https://t.co/O7tiANYpeT",
-          "expanded_url": "http://centrodemocratico.com",
-          "display_url": "centrodemocratico.com",
-          "indices": [
-            0,
-            23
-          ]
-        }
-      ]
-    },
-    "description": {
-      "urls": []
-    }
-  },
-  "protected": false,
-  "followers_count": 291609,
-  "friends_count": 314,
-  "listed_count": 517,
-  "created_at": "Wed Jan 23 22:30:02 +0000 2013",
-  "favourites_count": 9915,
-  "utc_offset": null,
-  "time_zone": null,
-  "geo_enabled": true,
-  "verified": true,
-  "statuses_count": 192040,
-  "lang": "es",
-  "status": {
-    "created_at": "Tue Mar 05 01:44:42 +0000 2019",
-    "id": 1102746728820813825,
-    "id_str": "1102746728820813825",
-    "text": "Comenzamos los acercamientos con los candidatos a avales para alcaldes, gobernadores, diputados, concejales y miemb\u2026 https://t.co/Hv7uZML9Xi",
-    "truncated": true,
-    "entities": {
-      "hashtags": [],
-      "symbols": [],
-      "user_mentions": [],
-      "urls": [
-        {
-          "url": "https://t.co/Hv7uZML9Xi",
-          "expanded_url": "https://twitter.com/i/web/status/1102746728820813825",
-          "display_url": "twitter.com/i/web/status/1\u2026",
-          "indices": [
-            117,
-            140
-          ]
-        }
-      ]
-    },
-    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-    "in_reply_to_status_id": null,
-    "in_reply_to_status_id_str": null,
-    "in_reply_to_user_id": null,
-    "in_reply_to_user_id_str": null,
-    "in_reply_to_screen_name": null,
-    "geo": null,
-    "coordinates": null,
-    "place": null,
-    "contributors": null,
-    "is_quote_status": false,
-    "retweet_count": 119,
-    "favorite_count": 269,
-    "favorited": false,
-    "retweeted": false,
-    "lang": "es"
-  },
-  "contributors_enabled": false,
-  "is_translator": false,
-  "is_translation_enabled": false,
-  "profile_background_color": "C0DEED",
-  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-  "profile_background_tile": false,
-  "profile_image_url": "http://pbs.twimg.com/profile_images/1088570694198312960/hQrOT-j-_normal.jpg",
-  "profile_image_url_https": "https://pbs.twimg.com/profile_images/1088570694198312960/hQrOT-j-_normal.jpg",
-  "profile_banner_url": "https://pbs.twimg.com/profile_banners/1115440213/1549500542",
-  "profile_link_color": "1DA1F2",
-  "profile_sidebar_border_color": "C0DEED",
-  "profile_sidebar_fill_color": "DDEEF6",
-  "profile_text_color": "333333",
-  "profile_use_background_image": true,
-  "has_extended_profile": false,
-  "default_profile": true,
-  "default_profile_image": false,
-  "following": true,
-  "live_following": false,
-  "follow_request_sent": false,
-  "notifications": false,
-  "muting": false,
-  "blocking": false,
-  "blocked_by": false,
-  "translator_type": "none"
-}
+#LasMásLeídas | El asesinato cometido para ocultar peligroso descubrimiento matemático ⬇ (Vía @bbcmundo) https://t.co/ajLmfaiIT9<br/>
+{<br/>
+  "created_at": "Tue Mar 05 08:00:13 +0000 2019",<br/>
+  "id": 1102841228457111553,<br/>
+  "id_str": "1102841228457111553",<br/>
+  "text": "#LasM\u00e1sLe\u00eddas | El asesinato cometido para ocultar peligroso descubrimiento matem\u00e1tico \u2b07 (V\u00eda @bbcmundo) https://t.co/ajLmfaiIT9",<br/>
+  "truncated": false,<br/>
+  "entities": {<br/>
+    "hashtags": [<br/>
+      {<br/>
+        "text": "LasM\u00e1sLe\u00eddas",<br/>
+        "indices": [<br/>
+          0,<br/>
+          13<br/>
+        ]<br/>
+      }<br/>
+    ],<br/>
+    "symbols": [],<br/>
+    "user_mentions": [<br/>
+      {<br/>
+        "screen_name": "bbcmundo",<br/>
+        "name": "BBC News Mundo",<br/>
+        "id": 10012122,<br/>
+        "id_str": "10012122",<br/>
+        "indices": [<br/>
+          94,<br/>
+          103<br/>
+        ]<br/>
+      }<br/>
+    ],<br/>
+    "urls": [<br/>
+      {<br/>
+        "url": "https://t.co/ajLmfaiIT9",<br/>
+        "expanded_url": "http://ow.ly/j3cq30nVdU5",<br/>
+        "display_url": "ow.ly/j3cq30nVdU5",<br/>
+        "indices": [<br/>
+          105,<br/>
+          128<br/>
+        ]<br/>
+      }<br/>
+    ]<br/>
+  },<br/>
+  "source": "<a href=\"https://www.hootsuite.com\" rel=\"nofollow\">Hootsuite Inc.</a>",<br/>
+  "in_reply_to_status_id": null,<br/>
+  "in_reply_to_status_id_str": null,<br/>
+  "in_reply_to_user_id": null,<br/>
+  "in_reply_to_user_id_str": null,<br/>
+  "in_reply_to_screen_name": null,<br/>
+  "user": {<br/>
+    "id": 9633802,<br/>
+    "id_str": "9633802",<br/>
+    "name": "EL TIEMPO",<br/>
+    "screen_name": "ELTIEMPO",<br/>
+    "location": "Bogot\u00e1, Colombia",<br/>
+    "description": "Principales noticias de Colombia, el mundo, deportes, econom\u00eda, pol\u00edtica, tecnolog\u00eda, cultura, estilo de vida, tendencias y mucho m\u00e1s. El Tiempo Casa Editorial.",<br/>
+    "url": "http://t.co/pXsWZAle5x",<br/>
+    "entities": {<br/>
+      "url": {<br/>
+        "urls": [<br/>
+          {<br/>
+            "url": "http://t.co/pXsWZAle5x",<br/>
+            "expanded_url": "http://www.eltiempo.com",<br/>
+            "display_url": "eltiempo.com",<br/>
+            "indices": [<br/>
+              0,<br/>
+              22<br/>
+            ]<br/>
+          }<br/>
+        ]<br/>
+      },<br/>
+      "description": {<br/>
+        "urls": []<br/>
+      }<br/>
+    },<br/>
+    "protected": false,<br/>
+    "followers_count": 6563843,<br/>
+    "friends_count": 26159,<br/>
+    "listed_count": 15584,<br/>
+    "created_at": "Tue Oct 23 20:03:24 +0000 2007",<br/>
+    "favourites_count": 6519,<br/>
+    "utc_offset": null,<br/>
+    "time_zone": null,<br/>
+    "geo_enabled": true,<br/>
+    "verified": true,<br/>
+    "statuses_count": 482612,<br/>
+    "lang": "es",<br/>
+    "contributors_enabled": false,<br/>
+    "is_translator": false,<br/>
+    "is_translation_enabled": true,<br/>
+    "profile_background_color": "06609C",<br/>
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",<br/>
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",<br/>
+    "profile_background_tile": true,<br/>
+    "profile_image_url": "http://pbs.twimg.com/profile_images/1053511496972541953/Po6LEiC5_normal.jpg",<br/>
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1053511496972541953/Po6LEiC5_normal.jpg",<br/>
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/9633802/1551042126",<br/>
+    "profile_link_color": "EB0C2A",<br/>
+    "profile_sidebar_border_color": "000000",<br/>
+    "profile_sidebar_fill_color": "FFFFFF",<br/>
+    "profile_text_color": "000000",<br/>
+    "profile_use_background_image": true,<br/>
+    "has_extended_profile": true,<br/>
+    "default_profile": false,<br/>
+    "default_profile_image": false,<br/>
+    "following": true,<br/>
+    "follow_request_sent": false,<br/>
+    "notifications": false,<br/>
+    "translator_type": "regular"<br/>
+  },<br/>
+  "geo": null,<br/>
+  "coordinates": null,<br/>
+  "place": null,<br/>
+  "contributors": null,<br/>
+  "is_quote_status": false,<br/>
+  "retweet_count": 0,<br/>
+  "favorite_count": 0,<br/>
+  "favorited": false,<br/>
+  "retweeted": false,<br/>
+  "possibly_sensitive": false,<br/>
+  "possibly_sensitive_appealable": false,<br/>
+  "lang": "es"<br/>
+}<br/>
+{<br/>
+  "id": 1115440213,<br/>
+  "id_str": "1115440213",<br/>
+  "name": "Centro Democr\u00e1tico",<br/>
+  "screen_name": "CeDemocratico",<br/>
+  "location": "Colombia",<br/>
+  "description": "Centro Democr\u00e1tico. Mano Firme, Coraz\u00f3n Grande - Partido Pol\u00edtico.",<br/>
+  "url": "https://t.co/O7tiANYpeT",<br/>
+  "entities": {<br/>
+    "url": {<br/>
+      "urls": [<br/>
+        {<br/>
+          "url": "https://t.co/O7tiANYpeT",<br/>
+          "expanded_url": "http://centrodemocratico.com",<br/>
+          "display_url": "centrodemocratico.com",<br/>
+          "indices": [<br/>
+            0,<br/>
+            23<br/>
+          ]<br/>
+        }<br/>
+      ]<br/>
+    },<br/>
+    "description": {<br/>
+      "urls": []<br/>
+    }<br/>
+  },<br/>
+  "protected": false,<br/>
+  "followers_count": 291609,<br/>
+  "friends_count": 314,<br/>
+  "listed_count": 517,<br/>
+  "created_at": "Wed Jan 23 22:30:02 +0000 2013",<br/>
+  "favourites_count": 9915,<br/>
+  "utc_offset": null,<br/>
+  "time_zone": null,<br/>
+  "geo_enabled": true,<br/>
+  "verified": true,<br/>
+  "statuses_count": 192040,<br/>
+  "lang": "es",<br/>
+  "status": {<br/>
+    "created_at": "Tue Mar 05 01:44:42 +0000 2019",<br/>
+    "id": 1102746728820813825,<br/>
+    "id_str": "1102746728820813825",<br/>
+    "text": "Comenzamos los acercamientos con los candidatos a avales para alcaldes, gobernadores, diputados, concejales y miemb\u2026 https://t.co/Hv7uZML9Xi",<br/>
+    "truncated": true,<br/>
+    "entities": {<br/>
+      "hashtags": [],<br/>
+      "symbols": [],<br/>
+      "user_mentions": [],<br/>
+      "urls": [<br/>
+        {<br/>
+          "url": "https://t.co/Hv7uZML9Xi",<br/>
+          "expanded_url": "https://twitter.com/i/web/status/1102746728820813825",<br/>
+          "display_url": "twitter.com/i/web/status/1\u2026",<br/>
+          "indices": [<br/>
+            117,<br/>
+            140<br/>
+          ]<br/>
+        }<br/>
+      ]<br/>
+    },<br/>
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",<br/>
+    "in_reply_to_status_id": null,<br/>
+    "in_reply_to_status_id_str": null,<br/>
+    "in_reply_to_user_id": null,<br/>
+    "in_reply_to_user_id_str": null,<br/>
+    "in_reply_to_screen_name": null,<br/>
+    "geo": null,<br/>
+    "coordinates": null,<br/>
+    "place": null,<br/>
+    "contributors": null,<br/>
+    "is_quote_status": false,<br/>
+    "retweet_count": 119,<br/>
+    "favorite_count": 269,<br/>
+    "favorited": false,<br/>
+    "retweeted": false,<br/>
+    "lang": "es"<br/>
+  },<br/>
+  "contributors_enabled": false,<br/>
+  "is_translator": false,<br/>
+  "is_translation_enabled": false,<br/>
+  "profile_background_color": "C0DEED",<br/>
+  "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",<br/>
+  "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",<br/>
+  "profile_background_tile": false,<br/>
+  "profile_image_url": "http://pbs.twimg.com/profile_images/1088570694198312960/hQrOT-j-_normal.jpg",<br/>
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/1088570694198312960/hQrOT-j-_normal.jpg",<br/>
+  "profile_banner_url": "https://pbs.twimg.com/profile_banners/1115440213/1549500542",<br/>
+  "profile_link_color": "1DA1F2",<br/>
+  "profile_sidebar_border_color": "C0DEED",<br/>
+  "profile_sidebar_fill_color": "DDEEF6",<br/>
+  "profile_text_color": "333333",<br/>
+  "profile_use_background_image": true,<br/>
+  "has_extended_profile": false,<br/>
+  "default_profile": true,<br/>
+  "default_profile_image": false,<br/>
+  "following": true,<br/>
+  "live_following": false,<br/>
+  "follow_request_sent": false,<br/>
+  "notifications": false,<br/>
+  "muting": false,<br/>
+  "blocking": false,<br/>
+  "blocked_by": false,<br/>
+  "translator_type": "none"<br/>
+}<br/>
 
-Process finished with exit code 0
+Process finished with exit code 0<br/>
 
 ## Task 2.3: Tweet pre-processing
