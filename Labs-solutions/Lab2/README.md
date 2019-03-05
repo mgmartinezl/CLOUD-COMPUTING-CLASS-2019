@@ -23,3 +23,25 @@ C:\Users\gabim\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/gab
 3117<br/>
 <br/>
 Process finished with exit code 0<br/>
+
+### Q213a (stopwords): 
+
+#### Why "Tensorflow" is not the most frequent word? <br/>
+Because before removing the stopwords, many of these prepositions were written more many times than "TensorFlow"<br/>
+<br/>
+#### Which are the Stop Words? <br/>
+the, of, to, in, a, and, is, we, that, this...<br/>
+<br/>
+### Q213b (WordCountTensorFlow_3.py): 
+C:\Users\gabim\AppData\Local\Programs\Python\Python37-32\python.exe C:/Users/gabim/PycharmProjects/Lab2_CC/WordCountTensorFlow_3.py<br/>
+[nltk_data] Downloading package punkt to<br/>
+[nltk_data]     C:\Users\gabim\AppData\Roaming\nltk_data...<br/>
+[nltk_data]   Package punkt is already up-to-date!<br/>
+[nltk_data] Downloading package stopwords to<br/>
+[nltk_data]     C:\Users\gabim\AppData\Roaming\nltk_data...<br/>
+[nltk_data]   Package stopwords is already up-to-date!<br/>
+[('tensorflow', 193), ('data', 102), ('tensor', 99), ('code', 90), ('learning', 81), ('function', 74), ('one', 73), ('use', 65), ('example', 64), ('available', 63)]<br/>
+2998<br/>
+<br/>
+Process finished with exit code 0<br/>
+
