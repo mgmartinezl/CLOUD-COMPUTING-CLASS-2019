@@ -303,6 +303,6 @@ Process finished with exit code 0<br/>
 
 ### Q24<br/>
 ### How long have you been working on this session?<br/>
-2 hours and a half in total (including the pre-lab homework)<br/>
+* 2 hours and a half in total (including the pre-lab homework)<br/>
 ### What have been the main difficulties you have faced and how have you solved them?<br/>
 * Setting up the Twitter Access environment variables in Unix
