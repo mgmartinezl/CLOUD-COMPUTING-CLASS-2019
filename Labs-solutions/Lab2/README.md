@@ -292,3 +292,11 @@ Process finished with exit code 0<br/>
 Process finished with exit code 0<br/>
 
 ## Task 2.3: Tweet pre-processing
+
+### Q23 (Twitter_3.py):
+
+#### The results we have gotten are:<br/>
+['RT', '@', 'JordiTorresBCN', ':', 'just', 'an', 'example', '!', ':', 'D', 'http', ':', '//JordiTorres.Barcelona', '#', 'masterMEI']<br/>
+['RT', '@JordiTorresBCN', ':', 'just', 'an', 'example', '!', ':D', 'http://JordiTorres.Barcelona', '#masterMEI']<br/>
+<br/>
+Process finished with exit code 0<br/>
