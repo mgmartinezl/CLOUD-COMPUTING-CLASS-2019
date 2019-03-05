@@ -1,0 +1,7 @@
+Lab 2 - Cloud Computing UPC
+Date: 05/03/2019
+Group number: 1
+
+Names: Sara Diaz (sara.diaz052@gmail.com) - Gabriela Martinez (airamgabriela17@gmail.com)
+
+GitHub repo: https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/tree/master/Labs-solutions/Lab2
