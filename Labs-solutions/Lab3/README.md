@@ -14,5 +14,5 @@ One of the retrieved tweets gave us this information:
 
 The plot we obtained was the following:
 
-![Alt text](C:\Users\gabim\PycharmProjects\Lab3_CC\CaseStudy.png?raw=true "Title")
+![Alt text](C:\Users\gabim\PycharmProjects\Lab3_CC\CaseStudy.png)
 
