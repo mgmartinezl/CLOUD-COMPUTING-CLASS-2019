@@ -39,9 +39,9 @@ Main insights found:
 
 * Note that the frequent term "budget" refers to the proposal for the 2020 budget that Donald Trump delivered to the House of Representatives. This budget proposal includes a cut for the "Medicare" program, the public health system for the elderly (let us remember that Donald Trump had promised not to destroy this program before).
 
-## Q35: 
-## How long have you been working on this session?
+### Q35: 
+### How long have you been working on this session?
 One hour and 45 minutes.
 
-## What have been the main difficulties you have faced and how have you solved them?
+### What have been the main difficulties you have faced and how have you solved them?
 The main difficulty we had was related to the understanding of how jsons are generated in real time from the real-time Twitter API. However, the scripts helped us figuring it out.
