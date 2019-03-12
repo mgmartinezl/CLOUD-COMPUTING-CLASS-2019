@@ -10,3 +10,9 @@ One of the retrieved tweets gave us this information:
 [('#ArtificialIntelligence', 86), ('#AI', 57), ('#MachineLearning', 25), ('#artificialintelligence', 21), ('#DeepLearning', 17), ('#BigData', 16), ('#Industry40', 14), ('#IoT', 11), ('#', 10), ('#DataScience', 10)]<br/>
 [('…', 196), ('The', 34), ('Read', 29), ('Artificial', 26), ('AI', 25), ('Intelligence', 17), ('This', 17), ('Ronald_vanLoon', 16), ('How', 14), ('Is', 14)]<br/>
 
+## Task 3.3: Case study
+
+The plot we obtained was the following:
+
+![Alt text](C:\Users\gabim\PycharmProjects\Lab3_CC\CaseStudy.png?raw=true "Title")
+
