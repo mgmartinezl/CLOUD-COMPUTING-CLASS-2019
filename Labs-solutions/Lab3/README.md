@@ -14,5 +14,5 @@ One of the retrieved tweets gave us this information:
 
 The plot we obtained was the following:
 
-![Alt text](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab3/CaseStudy.png)
+![Plot related to machine learning](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab3/CaseStudy.png)
 
