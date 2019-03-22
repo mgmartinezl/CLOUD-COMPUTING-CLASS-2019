@@ -37,6 +37,9 @@ We terminated the environment that hosted our app, through the EB console:
 
 ![EnvTerminated](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/envTerminated.png)
 
+#### Note that the EC2 instance is now terminated:
+![EnvTerminated](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/EC2terminateENV.png)
+
 We also found that the command ```eb terminate environment -name``` terminates specific environments (and all of them if the word ```all``` is specified in the parameter ```-name```) from the command line.
 
 ### Q45d: What parameters have you added to the eb create command to create your environment? Explain why you have selected each parameter.
