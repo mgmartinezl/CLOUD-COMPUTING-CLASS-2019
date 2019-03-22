@@ -41,6 +41,19 @@ We also found that the command ```eb terminate environment -name``` terminates s
 
 ### Q45d: What parameters have you added to the eb create command to create your environment? Explain why you have selected each parameter.
 
+We used the following parameters to create the environment:
 
+```_$ eb create --envvars DEBUG=True,STARTUP_SIGNUP_TABLE=gsg-signup-table,AWS_REGION=eu-west-1 --service-role gsg-signup-role```
+
+Specifically:
+* The DEBUG option set to True will allows us keep logs of the deployment of the instance so we can monitor potential errors. 
+* The STARTUP_SIGNUP_TABLE parameter will connect our app to the DynamoDB table we have created to store information from the app.
+* The AWS_REGION parameter will set the region where our environment instance will be located.
+* Additionally, we have also chosen the role we created for this environment.
 
 ### Q46: How long have you been working on this session? What have been the main difficulties you have faced and how have you solved them? Add your answers to README.md.
+
+We have been working 10 hours in this project so far. Main difficultades we faced were:
+
+* Deploy the app in EB.
+* Connect the app with Django. 
