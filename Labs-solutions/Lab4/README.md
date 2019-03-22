@@ -29,6 +29,18 @@ Also, note that EB created another EC2 instance because we have already set this
 
 ### Q45c: Can you terminate the application using the command line? What is the command? if it exists.
 
+We terminated the environment that hosted our app, through the EB console:
+
+![EnvTerminated](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/confirmationEnvTermination.png)
+
+![EnvTerminatedProgress](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/envTerminationInProgress.png)
+
+![EnvTerminated](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/envTerminated.png)
+
+We also found that the command ```eb terminate environment -name``` terminates specific environments (and all of them if the word ```all``` is specified in the parameter ```-name```) from the command line.
+
 ### Q45d: What parameters have you added to the eb create command to create your environment? Explain why you have selected each parameter.
+
+
 
 ### Q46: How long have you been working on this session? What have been the main difficulties you have faced and how have you solved them? Add your answers to README.md.
