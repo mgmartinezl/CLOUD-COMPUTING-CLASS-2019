@@ -2,6 +2,14 @@
 
 ## Names: Sara Díaz - Gabriela Martinez
 
+## The process of inserting records in our DynamoDB table through the web app was done as follows:
+![InsertRecord](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/insertNewStudent.png)
+
+![RecordConfirmation](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/insertionStudentOK.png)
+
+### Our DynamoDB table looked like this after inserting a couple of records:
+![DynamoDB](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab4/DynamoDB.png)
+
 ### Q45b: What has happened? Why do you think that has happened? Check both EC2 and EB consoles.
 The first thing we did was terminating the EC2 instance that was being used for the deployment of the application. After a couple of minutes, the EC2 console showed that the instance was "terminated". However, the EB console was still showing as "Healthy" the environment we had to host our app, as can be seen in the following images:
 
