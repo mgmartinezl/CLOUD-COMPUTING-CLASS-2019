@@ -9,6 +9,10 @@ As according to the following image, we were able to deploy our app in the Elast
 
 ![IAMPolicySucceeded](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab5/deployAppagain.png)
 
+See that we received correctly one notification we generated intendedly:
+
+![IAMPolicySucceeded](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab5/emailArrived.png)
+
 ### Task 5.2: Create a new option to retrieve the list of leads
 
 #### Q52: Has everything gone alright? What have you changed?
