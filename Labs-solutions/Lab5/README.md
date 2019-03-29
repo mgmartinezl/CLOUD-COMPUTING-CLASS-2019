@@ -43,5 +43,5 @@ The CloudFront console was successfully set and the results we got are as follow
 
 #### Q55: How long have you been working on this session (including the optional part)? What have been the main difficulties that you have faced and how have you solved them?
 
-We have been working on this session approximately 6 hours (including the 2 hours from the practical session)
+We have been working on this session approximately 6 hours (including the 2 hours from the practical session). Our main difficulty was related to the understanding of the get_leads() method.
 
