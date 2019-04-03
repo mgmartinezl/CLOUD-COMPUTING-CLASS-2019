@@ -61,11 +61,11 @@ PENDIENTE!!!
 
 PENDIENTE!!! PREGUNTAR
 
-The URL is not showing the result of any event because we have not defined the "test" event. However, if we change the URL so that it contains the word "default" instead of "test", the API allows in principle the execution of the GET event.
+The URL is not showing the result of any event because we have not defined the "test" event. However, if we change the URL so that it contains the word "default" instead of "test", the API allows in principle the execution of any event, such as GET, POST, PUT and DELETE.
 
 #### Q622. Does the reply of the above URL match what it should be expected? Why?
 
-PENDIENTE!!! PREGUNTAR
+PENDIENTE!!! PREGUNTAR. PREGUNTAR SOBRE CORS
 
 #### Q623. Explain what happens (actions and parts activated) when you type the URL in your browser to obtain the page updated with the shopping list.
 
