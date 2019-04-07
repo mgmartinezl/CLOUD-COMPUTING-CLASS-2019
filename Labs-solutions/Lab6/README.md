@@ -141,6 +141,7 @@ Yes, as GET is the default event that the HTTP protocol manages. We would have t
 
 #### Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
+*Launching a new Lambda function
 Step 0: install/update python virtual environment
 ```
 sudo apt-get install python3
@@ -176,12 +177,20 @@ Or export the profile and other environment variables direclty with:
 export AWS_PROFILE="serverless" && export AWS_REGION=eu-west-1
 ```
 
-Step 4: initialize project by creating a handler that will set up the behavior of our app. In our case, the lambda function that has already been defined as handler.py will perform this task.
+Step 4: initialize project by creating a handler that will set up the behavior of our app. 
+```
+serverless create --template aws-python3 --path myService
+```
+We also need to define a handler file. In our case, the lambda function that has already been defined as handler.py will be ok for this purpose and will be replaces in the "myService" path.
+
+Note that for this particular case we are using the aws-python3 template. However, many others can be used such as ruby or nodejs.
 
 Step 5: deploy the project
 ```
 export AWS_PROFILE="serverless"
 serverless deploy
 ```
+
+*Launching AWS API Gateway
 
 
