@@ -141,7 +141,7 @@ Yes, as GET is the default event that the HTTP protocol manages. We would have t
 
 #### Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
-*Launching a new Lambda function
+*Launching a new Lambda function*
 Step 0: install/update python virtual environment
 ```
 sudo apt-get install python3
@@ -181,9 +181,7 @@ Step 4: initialize project by creating a handler that will set up the behavior o
 ```
 serverless create --template aws-python3 --path myService
 ```
-We also need to define a handler file. In our case, the lambda function that has already been defined as handler.py will be ok for this purpose and will be replaces in the "myService" path.
-
-Note that for this particular case we are using the aws-python3 template. However, many others can be used such as ruby or nodejs.
+We also need to define a handler file. In our case, the lambda function that has already been defined as handler.py will be ok for this purpose and will be replaces in the "myService" path. Note that for this particular case we are using the **aws-python3** template. However, many others can be used such as *ruby or nodejs*.
 
 Step 5: deploy the project
 ```
@@ -191,6 +189,30 @@ export AWS_PROFILE="serverless"
 serverless deploy
 ```
 
-*Launching AWS API Gateway
+*Launching AWS API Gateway*
+Up to this point, we have defined our own lambda function but we have not defined a way to trigger it from a request or an API. To do so, we need to define a new **event**. 
 
+Our serverless.yml file created in step 4 will have the following structure:
+
+```
+provider:
+  name: aws
+  runtime: python3.6
+functions:
+    handler: myServiceLambdaFunction
+```
+
+In the *functions* part we have to define the new events we want to trigger through the handler. For instance, if we want to trigger the GET event, we add the following:
+
+```
+provider:
+  name: aws
+  runtime: python3.6
+functions:
+    handler: myServiceLambdaFunction
+    events:
+      - http:
+          path:  https://YOUR-API-HOST/test/serverless-controller?TableName=shopping-list
+          method: get
+```
 
