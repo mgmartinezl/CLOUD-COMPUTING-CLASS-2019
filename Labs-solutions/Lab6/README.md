@@ -141,7 +141,7 @@ Yes, as GET is the default event that the HTTP protocol manages. We would have t
 
 #### Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
-*Launching a new Lambda function*
+*Launching a new Lambda function*<br/>
 Step 0: install/update python virtual environment
 ```
 sudo apt-get install python3
@@ -189,7 +189,7 @@ export AWS_PROFILE="serverless"
 serverless deploy
 ```
 
-*Launching AWS API Gateway*
+*Launching AWS API Gateway*<br/>
 Up to this point, we have defined our own lambda function but we have not defined a way to trigger it from a request or an API. To do so, we need to define a new **event**. 
 
 Our serverless.yml file created in step 4 will have the following structure:
@@ -216,3 +216,39 @@ functions:
           method: get
 ```
 
+In general, we have the following options available to define events (this includes the enabling of CORS):
+```
+events: # The Events that trigger this Function
+      - http: # This creates an API Gateway HTTP endpoint which can be used to trigger this function.  Learn more in "events/apigateway"
+          path: users/create # Path for this endpoint
+          method: get # HTTP method for this endpoint
+          cors: true # Turn on CORS for this endpoint, but don't forget to return the right header in your response
+          private: true # Requires clients to add API keys values in the `x-api-key` header of their request
+          authorizer: # An AWS API Gateway custom authorizer function
+            name: authorizerFunc # The name of the authorizer function (must be in this service)
+            arn:  xxx:xxx:Lambda-Name # Can be used instead of name to reference a function outside of service
+            resultTtlInSeconds: 0
+            identitySource: method.request.header.Authorization
+            identityValidationExpression: someRegex
+            type: token # token or request. Determines input to the authorier function, called with the auth token or the entire request event. Defaults to token
+      - websocket:
+       route: $connect
+          authorizer:
+            # name: auth    NOTE: you can either use "name" or arn" properties
+            arn: arn:aws:lambda:us-east-1:1234567890:function:auth
+            identitySource:
+              - 'route.request.header.Auth'
+              - 'route.request.querystring.Auth'
+      - s3:
+          bucket: photos
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: uploads/
+            - suffix: .jpg
+      - schedule:
+          name: my scheduled event
+          description: a description of my scheduled event's purpose
+          rate: rate(10 minutes)
+          enabled: false
+```
+More information about this parameters at: https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/
