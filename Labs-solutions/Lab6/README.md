@@ -141,4 +141,47 @@ Yes, as GET is the default event that the HTTP protocol manages. We would have t
 
 #### Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
+Step 0: install/update python virtual environment
+```
+sudo apt-get install python3
+sudo apt-get install python3-pip
+sudo pip3 install virtualenv
+```
+
+Step 1: create virtual environment directory
+```
+mkdir -p serverless-use-cases/groceries/app
+cd serverless-use-cases/groceries/app
+```
+
+Step 2: create and activate virtual environment
+```
+virtualenv -p python3 venv
+. venv/bin/activate
+```
+
+Step 3: install and configure serverless framework
+```
+sudo npm install -g serverless
+serverless config credentials --provider aws --key <ACCESS KEY ID> --secret <SECRET KEY>
+```
+
+Use the desired profile to deploy serverless framework:
+```
+serverless deploy --aws-profile serverless
+```
+
+Or export the profile and other environment variables direclty with:
+```
+export AWS_PROFILE="serverless" && export AWS_REGION=eu-west-1
+```
+
+Step 4: initialize project by creating a handler that will set up the behavior of our app. In our case, the lambda function that has already been defined as handler.py will perform this task.
+
+Step 5: deploy the project
+```
+export AWS_PROFILE="serverless"
+serverless deploy
+```
+
 
