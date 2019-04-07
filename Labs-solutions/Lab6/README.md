@@ -179,7 +179,7 @@ export AWS_PROFILE="serverless" && export AWS_REGION=eu-west-1
 
 Step 4: initialize project by creating a handler that will set up the behavior of our app. 
 ```
-serverless create --template aws-python3 --path myService
+serverless create --template aws-python3 --path myLambdaFunction
 ```
 We also need to define a handler file. In our case, the lambda function that has already been defined as handler.py will be ok for this purpose and will be replaces in the "myService" path. Note that for this particular case we are using the **aws-python3** template. However, many others can be used such as *ruby or nodejs*.
 
@@ -188,6 +188,7 @@ Step 5: deploy the project
 export AWS_PROFILE="serverless"
 serverless deploy
 ```
+Step 6: adding events
 
 *Launching AWS API Gateway*<br/>
 Up to this point, we have defined our own lambda function but we have not defined a way to trigger it from a request or an API. To do so, we need to define a new **event**. 
@@ -199,7 +200,7 @@ provider:
   name: aws
   runtime: python3.6
 functions:
-    handler: myServiceLambdaFunction
+    handler: PathToMyLambdaFunction
 ```
 
 In the *functions* part we have to define the new events we want to trigger through the handler. For instance, if we want to trigger the GET event, we add the following:
@@ -209,7 +210,7 @@ provider:
   name: aws
   runtime: python3.6
 functions:
-    handler: myServiceLambdaFunction
+    handler: PathToMyLambdaFunction
     events:
       - http:
           path:  https://YOUR-API-HOST/test/serverless-controller?TableName=shopping-list
@@ -252,3 +253,20 @@ events: # The Events that trigger this Function
           enabled: false
 ```
 More information about this parameters at: https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/
+
+Step 7: redeploy the project
+```
+serverless deploy -v
+```
+
+As a result, we will get a new service endpoint: CHANGE THIS FOR OUR OWN URL
+```
+ServiceEndpoint: https://x7o0xwsbkd.execute-api.us-east-1.amazonaws.com/dev
+```
+
+Step 8: test our app CHANGE THIS FOR OUR OWN URL
+```
+curl -X GET https://x7o0xwsbkd.execute-api.us-east-1.amazonaws.com/dev/hello
+```
+Finally, we have gotten the result of the GET event as follows:
+PASTE IT HERE!!
