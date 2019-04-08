@@ -285,14 +285,12 @@ Step 7: redeploy the project
 serverless deploy -v
 ```
 
-As a result, we will get a new service endpoint: CHANGE THIS FOR OUR OWN URL
+As a result, we will get a new service endpoint
 ```
-ServiceEndpoint: https://x7o0xwsbkd.execute-api.us-east-1.amazonaws.com/dev
+ServiceEndpoint: http://cclab6.2.s3-website-eu-west-1.amazonaws.com/
 ```
 
-Step 8: test our app CHANGE THIS FOR OUR OWN URL
+Step 8: finally, test our app
 ```
-curl -X GET https://x7o0xwsbkd.execute-api.us-east-1.amazonaws.com/dev/hello
+curl -X GET http://cclab6.2.s3-website-eu-west-1.amazonaws.com/
 ```
-Finally, we have gotten the result of the GET event as follows:
-PASTE IT HERE!!
