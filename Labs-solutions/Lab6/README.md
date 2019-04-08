@@ -137,7 +137,33 @@ Yes, as GET is the default event that the HTTP protocol manages. We would have t
 
 #### Q625. Have you been able to debug the code of the Lambda function? If the answer is yes, check that you are using the root API keys. Erase such keys and create a new testing user with the required permissions.
 
+We debugged the lambda function with the root user:
+
+![RootUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nlmg/executionRootKeys.png)
+
+Afterward, we created another test user with a single permission to change passwords, so we could try the debugging again:
+
+![testUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nlmg/testUserNoPermissions.png)
+
+Later on, we tried to run the code with the keys related to that user, but we got an error:
+
+![ErrorTestUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nlmg/ExecutionUserNoPermission.png)
+
+Therefore, we needed to grant the necessary permission to this test role: **Microservice execution role**. We also added the permission **LambdaBasicExecutionRole**:
+
+![Permissions](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nlmg/permissionsNeeded.png)
+
+As a result, we were able to execute the code with the test user:
+
+![SuccessfulTestUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionAddedRedApples.png)
+
+![SuccessfulTestUser2](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nlmg/ExecutionAddedRedApples2.png)
+
+Note that the item "Red apples2" was added to our wishlist under the test user domain.
+
 #### Q626. What are the minimum permissions that the user's API keys needs to execute the Lambda function locally?
+
+We granted the **MicroserviceExecutionEole** to the test user. With this single permission we were able to run the application. However, we also added the permission **LambdaBasicExecutionRole** that we used in a previous lab session.
 
 #### Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
