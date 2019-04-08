@@ -141,6 +141,10 @@ We debugged the lambda function with the root user:
 
 ![RootUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/executionRootKeys.png)
 
+As seen we were able to put the "Red apples" on the shopping list: 
+
+![SuccessfulTestUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionAddedRedApples.png)
+
 Afterward, we created another test user with a single permission to change passwords, so we could try the debugging again:
 
 ![testUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/testUserNoPermissions.png)
@@ -154,8 +158,6 @@ Therefore, we needed to grant the necessary permission to this test role: **Micr
 ![Permissions](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/permissionsNeeded.png)
 
 As a result, we were able to execute the code with the test user:
-
-![SuccessfulTestUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionAddedRedApples.png)
 
 ![SuccessfulTestUser2](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionAddedRedApples2.png)
 
