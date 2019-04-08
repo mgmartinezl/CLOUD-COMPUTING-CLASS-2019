@@ -290,7 +290,7 @@ As a result, we will get a new service endpoint
 ServiceEndpoint: http://cclab6.2.s3-website-eu-west-1.amazonaws.com/
 ```
 
-Step 8: finally, test our app
+Step 8: finally, run this command to test the app
 ```
 curl -X GET http://cclab6.2.s3-website-eu-west-1.amazonaws.com/
 ```
