@@ -137,8 +137,162 @@ Yes, as GET is the default event that the HTTP protocol manages. We would have t
 
 #### Q625. Have you been able to debug the code of the Lambda function? If the answer is yes, check that you are using the root API keys. Erase such keys and create a new testing user with the required permissions.
 
+We debugged the lambda function with the root user:
+
+![RootUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/executionRootKeys.png)
+
+As seen we were able to put the "Red apples" on the shopping list: 
+
+![SuccessfulTestUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionAddedRedApples.png)
+
+Afterward, we created another test user with a single permission to change passwords, so we could try the debugging again:
+
+![testUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/testUserNoPermissions.png)
+
+Later on, we tried to run the code with the keys related to that user, but we got an error:
+
+![ErrorTestUser](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionUserNoPermission.png)
+
+Therefore, we needed to grant the necessary permission to this test role: **Microservice execution role**. We also added the permission **LambdaBasicExecutionRole**:
+
+![Permissions](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/permissionsNeeded.png)
+
+As a result, we were able to execute the code with the test user:
+
+![SuccessfulTestUser2](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab6/nImg/ExecutionAddedRedApples2.png)
+
+Note that the item "Red apples2" was added to our wishlist under the test user domain.
+
 #### Q626. What are the minimum permissions that the user's API keys needs to execute the Lambda function locally?
+
+We granted the **MicroserviceExecutionEole** to the test user. With this single permission we were able to run the application. However, we also added the permission **LambdaBasicExecutionRole** that we used in a previous lab session.
 
 #### Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
+*Launching a new Lambda function*<br/>
+Step 0: install/update python virtual environment
+```
+sudo apt-get install python3
+sudo apt-get install python3-pip
+sudo pip3 install virtualenv
+```
 
+Step 1: create virtual environment directory
+```
+mkdir -p serverless-use-cases/groceries/app
+cd serverless-use-cases/groceries/app
+```
+
+Step 2: create and activate virtual environment
+```
+virtualenv -p python3 venv
+. venv/bin/activate
+```
+
+Step 3: install and configure serverless framework
+```
+sudo npm install -g serverless
+serverless config credentials --provider aws --key <ACCESS KEY ID> --secret <SECRET KEY>
+```
+
+Use the desired profile to deploy serverless framework:
+```
+serverless deploy --aws-profile serverless
+```
+
+Or export the profile and other environment variables direclty with:
+```
+export AWS_PROFILE="serverless" && export AWS_REGION=eu-west-1
+```
+
+Step 4: initialize project by creating a handler that will set up the behavior of our app. 
+```
+serverless create --template aws-python3 --path myLambdaFunction
+```
+We also need to define a handler file. In our case, the lambda function that has already been defined as handler.py will be ok for this purpose and will be replaces in the "myService" path. Note that for this particular case we are using the **aws-python3** template. However, many others can be used such as *ruby or nodejs*.
+
+Step 5: deploy the project
+```
+export AWS_PROFILE="serverless"
+serverless deploy
+```
+Step 6: adding events
+
+*Launching AWS API Gateway*<br/>
+Up to this point, we have defined our own lambda function but we have not defined a way to trigger it from a request or an API. To do so, we need to define a new **event**. 
+
+Our serverless.yml file created in step 4 will have the following structure:
+
+```
+provider:
+  name: aws
+  runtime: python3.6
+functions:
+    handler: PathToMyLambdaFunction
+```
+
+In the *functions* part we have to define the new events we want to trigger through the handler. For instance, if we want to trigger the GET event, we add the following:
+
+```
+provider:
+  name: aws
+  runtime: python3.6
+functions:
+    handler: PathToMyLambdaFunction
+    events:
+      - http:
+          path:  https://YOUR-API-HOST/test/serverless-controller?TableName=shopping-list
+          method: get
+```
+
+In general, we have the following options available to define events (this includes the enabling of CORS):
+```
+events: # The Events that trigger this Function
+      - http: # This creates an API Gateway HTTP endpoint which can be used to trigger this function.  Learn more in "events/apigateway"
+          path: users/create # Path for this endpoint
+          method: get # HTTP method for this endpoint
+          cors: true # Turn on CORS for this endpoint, but don't forget to return the right header in your response
+          private: true # Requires clients to add API keys values in the `x-api-key` header of their request
+          authorizer: # An AWS API Gateway custom authorizer function
+            name: authorizerFunc # The name of the authorizer function (must be in this service)
+            arn:  xxx:xxx:Lambda-Name # Can be used instead of name to reference a function outside of service
+            resultTtlInSeconds: 0
+            identitySource: method.request.header.Authorization
+            identityValidationExpression: someRegex
+            type: token # token or request. Determines input to the authorier function, called with the auth token or the entire request event. Defaults to token
+      - websocket:
+       route: $connect
+          authorizer:
+            # name: auth    NOTE: you can either use "name" or arn" properties
+            arn: arn:aws:lambda:us-east-1:1234567890:function:auth
+            identitySource:
+              - 'route.request.header.Auth'
+              - 'route.request.querystring.Auth'
+      - s3:
+          bucket: photos
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: uploads/
+            - suffix: .jpg
+      - schedule:
+          name: my scheduled event
+          description: a description of my scheduled event's purpose
+          rate: rate(10 minutes)
+          enabled: false
+```
+More information about this parameters at: https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/
+
+Step 7: redeploy the project
+```
+serverless deploy -v
+```
+
+As a result, we will get a new service endpoint
+```
+ServiceEndpoint: http://cclab6.2.s3-website-eu-west-1.amazonaws.com/
+```
+
+Step 8: finally, run this command to test the app
+```
+curl -X GET http://cclab6.2.s3-website-eu-west-1.amazonaws.com/
+```
