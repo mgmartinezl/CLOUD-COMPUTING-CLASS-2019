@@ -9,4 +9,9 @@ class ImdbscraperSpider(scrapy.Spider):
 
     def parse(self, response):
         pass
-        print(response.css('title::text').get().strip().split(' (')[0])
+        yield {
+            'movie_id': response.xpath('//meta[@property = "pageId"]/@content').extract_first(),
+            'movie_name': response.css('title::text').get().strip().split(' (')[0],
+            'movie_year':response.css('title::text').get().split(' (')[1].split(')')[0],
+
+              }
