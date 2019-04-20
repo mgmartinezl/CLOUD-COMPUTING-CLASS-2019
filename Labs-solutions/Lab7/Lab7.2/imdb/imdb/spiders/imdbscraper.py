@@ -32,8 +32,8 @@ class ImdbscraperSpider(scrapy.Spider):
 
                         'movie_id': response.xpath('//meta[@property = "pageId"]/@content').extract_first(),
                         'movie_name': response.css('title::text').get().strip().split(' (')[0],
-                        'movie_year': response.xpath('normalize-space(//span[@class = "nobr"])').extract_first()
-                            .replace("(", "").replace(")", ""),
+                        'movie_year': str(response.xpath('normalize-space(//span[@class = "nobr"])').extract_first()
+                            .replace("(", "").replace(")", ""))[:4],
                         'actor_name': actor.split("alt=")[1].split("title")[0].replace('"', '').strip(),
                         'actor_id': actor.split("name/")[1].split("/")[0],
                         'role_name': role_n
