@@ -88,6 +88,20 @@ class ImdbscraperSpider(scrapy.Spider):
 
 The imdb json file is within this repository at: https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/Lab7.2/imdb/imdb.json
 
+A preview of the json file is as follows:
+```
+[
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Harrison Ford", "actor_id": "nm0000148", "role_name": "Jack Trainer"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Sigourney Weaver", "actor_id": "nm0000244", "role_name": "Katharine Parker"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Melanie Griffith", "actor_id": "nm0000429", "role_name": "Tess McGill"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Alec Baldwin", "actor_id": "nm0000285", "role_name": "Mick Dugan"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Joan Cusack", "actor_id": "nm0000349", "role_name": "Cyn"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Philip Bosco", "actor_id": "nm0097842", "role_name": "Oren Trask"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Nora Dunn", "actor_id": "nm0004887", "role_name": "Ginny"},
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Oliver Platt", "actor_id": "nm0001624", "role_name": "Lutz"}
+]
+```
+
 ### Task 7.3: Study the obtained data using the Elastic Stack
 #### Q73: Take a screenshot of the Kibana Dashboard showing the above plots without filters. Set a couple of filters, take screetshots. Add all the screenshots to the Lab7 folder of your answers repository.
 
