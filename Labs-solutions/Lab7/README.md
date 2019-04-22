@@ -105,3 +105,19 @@ A preview of the json file is as follows:
 ### Task 7.3: Study the obtained data using the Elastic Stack
 #### Q73: Take a screenshot of the Kibana Dashboard showing the above plots without filters. Set a couple of filters, take screetshots. Add all the screenshots to the Lab7 folder of your answers repository.
 
+The following dashboard was created using the Elasticsearch and Kibana 6.7 version:
+![Dashboard](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/MoviesDashboard.PNG)
+
+We applied some filters on it to explore behavior:
+* First, we wanted to know all the information related to movies and years in which Frank Welter took place, the actor with the highest number of records according to the tag cloud.
+![Frank](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/FrankWelker_Filter.PNG)
+
+* Additionally, we also filtered the information for the movie "Working Girl":
+![WorkingGirl](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/WorkingGirl_Filter.PNG)
+
+* Finally, we looked for movies filmed in 1982:
+![1982](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/1982Movies_Filter.PNG)
+
+
+
+
