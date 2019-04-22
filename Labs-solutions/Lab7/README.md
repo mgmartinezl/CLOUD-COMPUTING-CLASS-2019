@@ -251,7 +251,11 @@ A preview the new json file, which is available at: https://github.com/mgmartine
 ]
 ```
 
-Similarly to what we did before, we uploaded this new json file to Elasticsearch and Kibana to obtain or new plot to answer our question.
+Similarly to what we did before, we uploaded this new json file to Elasticsearch and Kibana to obtain or new plot to answer our question:
+
+![Signs](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/Star_Signs.PNG)
+
+From the previous, we can see that Leo and Aquarius are the most popular signs (both with more than 10% of share amongst the actors), followed by Aries and Cancer with approximately 9% of the cast belonging to them.
 
 #### Q75: How long have you been working on this session? What have been the main difficulties you have faced and how have you solved them?
 We have been working on this assignment a total of 15 hours. Main difficulties have been related to:
