@@ -105,12 +105,13 @@ A preview of the json file is as follows:
 ### Task 7.3: Study the obtained data using the Elastic Stack
 #### Q73: Take a screenshot of the Kibana Dashboard showing the above plots without filters. Set a couple of filters, take screetshots. Add all the screenshots to the Lab7 folder of your answers repository.
 
-The following dashboard was created using the Elasticsearch and Kibana 6.7 version:
+The following dashboard was created using the Elasticsearch and Kibana 6.7 cloud version:
 ![Dashboard](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/MoviesDashboard.PNG)
 
 We applied some filters on it to explore behavior:
 * First, we wanted to know all the information related to movies and years in which Frank Welter took place, the actor with the highest number of records according to the tag cloud.
 ![Frank](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/FrankWelker_Filter.PNG)
+![FrankMovies](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/FrankWelker_Filter2.PNG)
 
 * Additionally, we also filtered the information for the movie "Working Girl":
 ![WorkingGirl](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/WorkingGirl_Filter.PNG)
@@ -118,6 +119,11 @@ We applied some filters on it to explore behavior:
 * Finally, we looked for movies filmed in 1982:
 ![1982](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab7/1982Movies_Filter.PNG)
 
+#### What is your question? "What is the average height of the top then actors more popular for the time period studied?". Change the code according to your question, create a new view and add it to the Dashboard. Take a screenshot of the new plot.
+PENDING
 
-
-
+#### Q75: How long have you been working on this session? What have been the main difficulties you have faced and how have you solved them?
+We have been working on this assignment a total of 15 hours. Main difficulties have been related to:
+* Understanding how to access html code with scrapy for specific use cases (such as the nytimes page or the imdb website).
+* Connecting successfully to Elasticsearch and creating the index patterns in Kibana
+* Understanding how Kibana manages visualizations.
