@@ -8,6 +8,7 @@ class ImdbscraperSpider(scrapy.Spider):
     allowed_domains = ['www.imdb.com']
     start_urls = ['https://www.imdb.com/title/tt0096463/fullcredits/']
 
+    # Parse movie page
     def parse(self, response):
         actors = response.xpath('//table[@class = "cast_list"]//tr').extract()
         movie_year = str(
@@ -44,6 +45,7 @@ class ImdbscraperSpider(scrapy.Spider):
 
                     yield response.follow(url, callback=self.parse_actor)
 
+    # Parse actor additional info.  and get his/her movies
     def parse_actor(self, response):
         # yield {'birth_date':
         # response.xpath('//script[@type = "application/ld+json"]').extract_first().split('"birthDate":')[1].split('"')[1]}
