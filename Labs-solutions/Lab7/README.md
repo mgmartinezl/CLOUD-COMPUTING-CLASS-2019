@@ -247,21 +247,7 @@ A preview the new json file, which is available at: https://github.com/mgmartine
 {"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Harrison Ford", "actor_id": "nm0000148", "role_name": "Jack Trainer", "star_sign": "Cancer"},
 {"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Amy Aquino", "actor_id": "nm0032628", "role_name": "Alice Baxter", "star_sign": "Pisces"},
 {"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Sigourney Weaver", "actor_id": "nm0000244", "role_name": "Katharine Parker", "star_sign": "Libra"},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Olympia Dukakis", "actor_id": "nm0001156", "role_name": "Personnel Director", "star_sign": "Gemini"},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Melanie Griffith", "actor_id": "nm0000429", "role_name": "Tess McGill", "star_sign": "Leo"},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Maggie Wagner", "actor_id": "nm0906000", "role_name": "Tess's Birthday Party Friend", "star_sign": "Aquarius"},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Alison Wachtler", "actor_id": "nm0905202", "role_name": "Petty Marshall Secretary", "star_sign": ""},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Kevin Spacey", "actor_id": "nm0000228", "role_name": "Bob Speck", "star_sign": "Leo"},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Lou DiMaggio", "actor_id": "nm0227155", "role_name": "Tess's Birthday Party Friend", "star_sign": ""},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Karen Starr", "actor_id": "nm1991101", "role_name": "Secretary", "star_sign": ""},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "David Duchovny", "actor_id": "nm0000141", "role_name": "Tess's Birthday Party Friend", "star_sign": "Leo"},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Joan Cusack", "actor_id": "nm0000349", "role_name": "Cyn", "star_sign": "Libra"},
-{"movie_id": "tt0095593", "movie_name": "Married to the Mob", "movie_year": "1986", "actor_name": "Anthony J. Nici", "actor_id": "nm0629941", "role_name": "Joey de Marco", "star_sign": ""},
-{"movie_id": "tt0095593", "movie_name": "Married to the Mob", "movie_year": "1986", "actor_name": "Diane Puccerella", "actor_id": "nm0699716", "role_name": "Three-Card Monte Victim", "star_sign": ""},
-{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Robert Easton", "actor_id": "nm0247691", "role_name": "Armbrister", "star_sign": "Sagittarius"},
-{"movie_id": "tt0095593", "movie_name": "Married to the Mob", "movie_year": "1986", "actor_name": "Suzanne Puccerella", "actor_id": "nm0699717", "role_name": "Three-Card Monte Victim", "star_sign": ""},
-{"movie_id": "tt0095593", "movie_name": "Married to the Mob", "movie_year": "1986", "actor_name": "Jason Allen", "actor_id": "nm0020629", "role_name": "Tony Russo, Jr.", "star_sign": ""},
-{"movie_id": "tt0095593", "movie_name": "Married to the Mob", "movie_year": "1986", "actor_name": "Mercedes Ruehl", "actor_id": "nm0001689", "role_name": "Connie Russo", "star_sign": "Pisces"}
+{"movie_id": "tt0096463", "movie_name": "Working Girl", "movie_year": "1988", "actor_name": "Olympia Dukakis", "actor_id": "nm0001156", "role_name": "Personnel Director", "star_sign": "Gemini"}
 ]
 ```
 
