@@ -80,4 +80,6 @@ python ImageAnalyzer.py "https://pixabay.com/fr/images/search/pandas/" "wordClou
 ```
 
 The corresponding word clouds to each URL were:
-
+![Dogs](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudDogs.png)
+![Cats](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudCats.png)
+![Pandas](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudPandas.png)
