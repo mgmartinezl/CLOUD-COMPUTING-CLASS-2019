@@ -72,14 +72,17 @@ To run the previous code from the command line, we passed as parameters:
 * The URL to process
 * The name of PNG file to be generated from the search.
 
-The examples run were the following and considered three different URLs that contained images about dogs, cats and pandas:
+The examples run were the following and considered three different URLs that contained images about dogs, cats and pandas:  
 ```
 python ImageAnalyzer.py "https://pixabay.com/fr/images/search/dogs/" "wordCloudDogs.png"
 python ImageAnalyzer.py "https://pixabay.com/fr/images/search/cats/" "wordCloudCats.png"
 python ImageAnalyzer.py "https://pixabay.com/fr/images/search/pandas/" "wordCloudPandass.png"
 ```
 
-The corresponding word clouds to each URL were:
-![Dogs](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudDogs.png)  
+The corresponding word clouds to each URL were:  
+![Dogs](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudDogs.png)
+***
 ![Cats](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudCats.png)  
+***
 ![Pandas](https://github.com/mgmartinezl/CLOUD-COMPUTING-CLASS-2019/blob/master/Labs-solutions/Lab8/cloud-vision/wordCloudPandas.png)  
+***
