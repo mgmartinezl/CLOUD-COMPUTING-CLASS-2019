@@ -89,7 +89,7 @@ The corresponding word clouds to each URL were:
 ***
 
 #### Q81: What problems have you found developing this section? How did you solve them? 
-We experienced issues trying to cound the frequency of labels composed by more than one word. For example, many pictures about dogs were identified to be "golden retriever", but those two words were being counted as separate, so we had to implement an underscore to replace the space between the words and in this way the wourcount worked as expected.
+We experienced issues trying to cound the frequency of labels composed by more than one word. For example, some pictures about dogs were identified to be _"golden retriever"_, but those two words were being counted as separate, so we had to implement an underscore to replace the space between the words and in this way the wourcount worked as expected, counting this term only once per occurrence.
 
 ### Q82: How long have you been working on this session?
 We worked on this session a total of 7 hours in group session.
