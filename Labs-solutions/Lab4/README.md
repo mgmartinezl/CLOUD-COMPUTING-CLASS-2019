@@ -1,4 +1,4 @@
-# Lab 4 answers
+# Lab 4 - Building a web application
 
 ## Names: Sara Díaz - Gabriela Martinez
 
