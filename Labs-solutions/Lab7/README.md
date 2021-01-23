@@ -1,4 +1,4 @@
-# Lab 7 answers
+# Lab 7 - Web Scrapping
 
 ## Names: Sara Díaz - Gabriela Martinez
 
