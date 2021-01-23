@@ -1,4 +1,4 @@
-# Lab 8 answers
+# Lab 8 - Google Cloud Vision
 
 ## Names: Sara Díaz - Gabriela Martinez
 
