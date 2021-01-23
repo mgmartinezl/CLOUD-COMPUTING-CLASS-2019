@@ -1,4 +1,4 @@
-# Lab 3 answers
+# Lab 3 - Analyzing Tweets 
 
 ## Names: Sara Díaz - Gabriela Martinez
 
