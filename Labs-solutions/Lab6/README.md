@@ -1,4 +1,4 @@
-# Lab 6 answers
+# Lab 6 - Deploying Web Servers
 
 ## Names: Sara Díaz - Gabriela Martinez
 
