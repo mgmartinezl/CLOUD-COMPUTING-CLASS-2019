@@ -1,4 +1,4 @@
-# Lab 1
+# Lab 1 - Scripting
 ### Fecha: 26/02/2019
 ### Names: Sara Díaz - Gabriela Martinez
 
