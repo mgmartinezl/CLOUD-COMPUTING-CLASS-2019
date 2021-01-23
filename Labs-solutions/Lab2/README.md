@@ -1,4 +1,4 @@
-# Lab 2 answers
+# Lab 2 - Natural Language Processing
 
 ## Names: Sara Díaz - Gabriela Martinez
 
