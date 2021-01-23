@@ -1,4 +1,4 @@
-# Lab 5 answers
+# Lab 5 - AWS
 
 ## Names: Sara Díaz - Gabriela Martinez
 
